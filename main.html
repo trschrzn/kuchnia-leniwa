@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontello/css/fontello.css">
+
+    <title>Kuchnia Leniwa</title>
+
+    <script>
+        document.querySelectorAll('a#toTop').forEach(link => {
+            link.addEventListener('click', (e) => {
+                console.log('A link was clicked');
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logoName">
+            <a href="main.html">
+                <object id="svgLogo" data="img/logo.svg" type="image/svg+xml"></object>
+                <span>Kuchnia Leniwa</span>
+            </a>
+        </div>
+        <div class="socials">
+            <div class="search">
+                <input type="search" name="searchInput" id="searchInput" class="visible slide-left">
+                <button id="searchBtn"><i class="icon-search"></i></button>
+            </div>
+            <a href="infos.html"><i class="icon-book"></i><span>źródła</span></a>
+            <a href="mailto:teresachrzan120100@gmail.com"><i class="icon-mail"></i><span>wyślij maila</span></a>
+        </div>
+    </header>
+
+    <aside>
+        <nav>
+            <input type="checkbox" name="" id="toggle">
+            <label for="toggle">pokaż filtry</label>
+
+            <div class="menu">
+                <button id="favButton" class="longButton"><i class="icon-heart"></i>pokaż ulubione przepisy</button>
+
+                <hr>
+                <div class="categories" id="categories">
+                    <h3>kategorie</h3>
+                </div>
+
+                <div class="portions">
+                    <h3>ile porcji?</h3>
+                    <div class="portion">
+                        <button class="less" id="portionLess"><i class="icon-minus"></i></button>
+                        <input type="text" name="portionInput" id="portionInput" value="0" min="0" max="10" disabled />
+                        <button class="more" id="portionMore"><i class="icon-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="diet"><h3>Dieta</h3></div>
+
+                <div class="occasion"><h3>okazje</h3></div>
+
+                <button class="longButton" id="filtrButton">filtruj</button>
+                <hr>
+
+                <div class="ingredients">
+                    <h3>wybierz składniki</h3>
+                    <button id="reset">wyczyść składniki</button>
+                    <button id="nothingElse">nie mam nic więcej</button>
+
+                    <input type="checkbox" name="toggleIng" id="toggleIng">
+                        <label for="toggleIng"><i class="icon-plus"></i>pokaż wszystkie</label>
+
+                    <div class="ingredientsAll"></div>
+                </div>
+            </div>
+        </nav>
+    </aside>
+    <button onclick="topFunction()" class="scrollup" id="scrollUp" title="Go to top"><i class="icon-up-big"></i></button>
+    
+    <main class="grid" id="recipe"></main>
+
+    <footer>
+        <a href="infos.html"><i class="icon-book"></i><span>źródła</span></a>
+        <a href="main.html"><i class="icon-home"></i><span>strona główna</span></a>
+        <a href="#" id="toTop"><i class="icon-up-big"></i><span>do góry!</span></a>
+    </footer>
+
+    <script src="recipes.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
