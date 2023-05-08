@@ -9,14 +9,6 @@
     <link rel="stylesheet" href="fontello/css/fontello.css">
 
     <title>Kuchnia Leniwa</title>
-
-    <script>
-        document.querySelectorAll('a#toTop').forEach(link => {
-            link.addEventListener('click', (e) => {
-                console.log('A link was clicked');
-            });
-        });
-    </script>
 </head>
 <body>
     <header>
@@ -31,7 +23,6 @@
                 <input type="search" name="searchInput" id="searchInput" class="visible slide-left">
                 <button id="searchBtn"><i class="icon-search"></i></button>
             </div>
-            <a href="infos.html"><i class="icon-book"></i><span>źródła</span></a>
             <a href="mailto:teresachrzan120100@gmail.com"><i class="icon-mail"></i><span>wyślij maila</span></a>
         </div>
     </header>
@@ -83,9 +74,24 @@
     <main class="grid" id="recipe"></main>
 
     <footer>
-        <a href="infos.html"><i class="icon-book"></i><span>źródła</span></a>
-        <a href="main.html"><i class="icon-home"></i><span>strona główna</span></a>
-        <a href="#" id="toTop"><i class="icon-up-big"></i><span>do góry!</span></a>
+        <div class="icons">
+            <a href="main.html"><i class="icon-home"></i><span>strona główna</span></a>
+            <a href="#"><i class="icon-up-big"></i><span>do góry!</span></a>
+        </div>
+        <div class="infos">
+            <h6>Źródła:</h6>
+        <ol>
+            <li><span><q>Kuchnia polska - domowe przepisy</q></span></li>
+            <li><span><q>łaciate gotowanie cz.II</q></span></li>
+            <li><span><q>Pyszne ciasta nr I 2012</q></span></li>
+            <li><span><q>Kasze - pyszne i smaczne dania</q><em>Fakt</em></span></li>
+            <li><span><q>Lato w kuchni</q><em>Fakt</em></span></li>
+            <li><span>kwestiasmaku.com</span></li>
+            <li><span>przepisna.pl</span></li>
+            <li><span>aniagotuje.pl</span></li>
+            <li><span>Zeszyty mojej mamy, w których zapisywała znalezione/poznane przepisy <i class="icon-heart"></i></span></li>
+        </ol>
+        </div>
     </footer>
 
     <script src="recipes.js"></script>
