@@ -1,0 +1,19 @@
+#Przekierowanie bez WWW
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www.trschrzn.github.io/kuchnia-leniwa/ [nc]
+RewriteRule ^(.*)$ http://trschrzn.github.io/kuchnia-leniwa//$1 [r=301,nc]
+
+
+
+#Przekierowanie na https
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://trschrzn.github.io/kuchnia-leniwa/
+
+
+
+
+
+#Zmiana domyślnego pliku
+DirectoryIndex https://trschrzn.github.io/recipe-page/index.html
