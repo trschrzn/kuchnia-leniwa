@@ -31,7 +31,9 @@ body {
   grid-template-columns: .6fr 1.4fr;
   grid-template-rows: auto;
   gap: 30px 20px;
-  grid-template-areas: "header header" "aside main" "footer footer";
+  grid-template-areas: "header header"
+ "aside main"
+ "footer footer";
   overflow-x: hidden;
 }
 
@@ -998,6 +1000,9 @@ footer .infos ol li span em::before {
   main .bigContainer .photos img {
     width: 90vw;
   }
+   main .bigContainer .ingredients .checkboxes .textSmwhr {
+    display: none;
+  }
   main.grid {
     display: flex;
     flex-direction: column;
@@ -1021,7 +1026,10 @@ footer .infos ol li span em::before {
     align-items: center;
   }
   footer .infos {
-    margin: 25px 0;
+    border-top: 2px solid #f3e9d2;
+    border-bottom: 2px solid #f3e9d2;
+    padding: 20px;
+    margin: 20px 0;
   }
   footer .infos ol {
     display: flex;
@@ -1029,5 +1037,6 @@ footer .infos ol li span em::before {
     justify-content: center;
     align-items: center;
     line-height: 130%;
+    gap: 10px;
   }
 }
