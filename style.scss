@@ -913,6 +913,7 @@ footer{
             .title {h1{font-size: 34px;}}
             .recipe{ol{padding-left: 30px;}}
             .photos{img{width: 90vw;}}
+	.ingredients{.checkboxes{.textSmwhr{display: none;}}}
         }
         &.grid{
             display: flex;
@@ -925,12 +926,14 @@ footer{
             }
         }
     }
-    
-    footer{padding: 5px;flex-direction: column;justify-content: center;
+	footer{padding: 5px;flex-direction: column;justify-content: center;
         .icons{gap: 10px; justify-content: center; align-items: center;}
         .infos{
-            margin: 25px 0;
-            ol{ display: flex; flex-direction: column; justify-content: center; align-items: center; line-height: 130%;}
+            border-top: 2px solid $beige;
+            border-bottom: 2px solid $beige;
+            padding: 20px;
+            margin: 20px 0;
+            ol{display: flex; flex-direction: column; justify-content: center; align-items: center; line-height: 130%; gap: 10px;}
         }
     }
 }
